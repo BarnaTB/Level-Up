@@ -46,6 +46,6 @@ class User:
         # source: https://docs.python.org/2/howto/regex.html
         if not re.match(r"[A-Za-z0-9@#]", self.password):
             return 'Oops!, invalid password'
-q        elif len(self.password) < 6:
+q       elif len(self.password) < 6:
             return 'Password should be at least six characters long'
         return 'Valid password!'
